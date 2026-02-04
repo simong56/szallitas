@@ -19,11 +19,11 @@ namespace szallitas
             foreach (int num in nums)
             {
                 dobozTomeg += num;
-                if (dobozTomeg > 15)
+                if (dobozTomeg >= 20)
                 {
                     dobozTomegek.Add(dobozTomeg);
                     dobozCount++;
-                    dobozTomeg = 0;
+                    dobozTomeg = num;
                 }
             }
             Console.Write("\nA dobozok tartalmának tömege (kg): ");
